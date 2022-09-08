@@ -34,13 +34,26 @@ public class Ex39 {
         }
     }
 
+    private static void printTriangle(int size){
+        int row = 1;
+        while(row <= size){
+            int field = 1;
+            while(field <= row){
+                System.out.print("* ");
+                field++;
+            }
+            System.out.println();
+            row++;
+        }
+    }
+
     public static void main(String[] args) {
         printStars(5);
         printStars(3);
         printStars(9);
         printSquare(4);
         printRectangle(17,3);
-
+        printTriangle(4);
     }
 
 }
