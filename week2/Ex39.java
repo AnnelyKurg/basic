@@ -55,5 +55,4 @@ public class Ex39 {
         printRectangle(17,3);
         printTriangle(4);
     }
-
 }
