@@ -5,17 +5,16 @@ public class NumberStatistics {
 
     public NumberStatistics() {
         // initialize here the object variable amountOfNumbers
-        this.amountOfNumbers = amountOfNumbers;
+        this.amountOfNumbers = 0;
     }
 
     public void addNumber(int number) {
         // code here
-        this.amountOfNumbers = number;
+        this.amountOfNumbers++;
     }
 
     public int amountOfNumbers() {
         // code here
-        return this.amountOfNumbers + amountOfNumbers;
-
+        return this.amountOfNumbers;
     }
 }
