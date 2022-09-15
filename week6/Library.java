@@ -9,7 +9,7 @@ public class Library {
         this.books = new ArrayList<Book>();
     }
 
-    public void addBook(Book newBook) {
+    public void addBook(Book newBook){
         this.books.add(newBook);
     }
 
@@ -23,20 +23,23 @@ public class Library {
         ArrayList<Book> found = new ArrayList<Book>();
 
         for (Book book : this.books) {
-            if(book.title().contains(title)){
+            if(StringUtils.included(book.title(), title)) {
                 found.add(book);
             }
         }
+
         return found;
     }
+
     public ArrayList<Book> searchByPublisher(String publisher) {
         ArrayList<Book> found = new ArrayList<Book>();
 
         for (Book book : this.books) {
-            if(book.title().contains(publisher.trim())){
+            if(StringUtils.included(book.publisher(), publisher)){
                 found.add(book);
             }
         }
+
         return found;
     }
 
