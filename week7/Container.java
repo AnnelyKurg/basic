@@ -30,4 +30,11 @@ public class Container {
         }
         return weightCurrent;
     }
+    public void printThings(){
+        for (Suitcase currentSuitcase :this.suitcases) {
+            for (Thing currentThing : currentSuitcase.getThings()) {
+                System.out.println(currentThing);
+            }
+        }
+    }
 }

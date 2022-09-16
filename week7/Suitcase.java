@@ -55,4 +55,7 @@ public class Suitcase {
         if(this.things.size() == 0) return null;
         return heavist;
     }
+    public ArrayList<Thing> getThings() {
+        return things;
+    }
 }
