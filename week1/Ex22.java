@@ -16,5 +16,7 @@ public class Ex22 {
             }
         }
         System.out.println("Right!");
+
+        System.out.println("The secret is: jryy qbar!");
     }
 }
