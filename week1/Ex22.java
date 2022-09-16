@@ -15,7 +15,6 @@ public class Ex22 {
                 System.out.println("Wrong!");
             }
         }
-
         System.out.println("Right!");
     }
 }
