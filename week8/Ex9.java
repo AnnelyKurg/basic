@@ -12,13 +12,11 @@ public class Ex9 {
         VehicleRegister register = new VehicleRegister();
 
         register.add(reg1, "Arto");
+        register.add(reg2, "Jügen");
         register.add(reg3, "Jügen");
 
-        System.out.println(register.get(reg1));
-        System.out.println(register.get(reg2));
-        System.out.println(register.get(reg3));
+        register.printRegistrationPlates();
 
-        register.delete(reg2);
-        System.out.println(register.getOwners());
+        register.printOwners();
     }
 }
