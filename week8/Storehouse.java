@@ -1,7 +1,6 @@
 package week8;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class Storehouse {
     private Map<String, Integer> products;
@@ -41,8 +40,5 @@ public class Storehouse {
             return false;
         }
         return false;
-    }
-    public Set<String> products(){
-        return this.products.keySet();
     }
 }
