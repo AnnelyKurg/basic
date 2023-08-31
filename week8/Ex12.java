@@ -2,14 +2,12 @@ package week8;
 public class Ex12 {
     public static void main(String[] args) {
         Storehouse store = new Storehouse();
-        store.addProduct("milk", 3, 10);
-        store.addProduct("coffee", 5, 7);
+        store.addProduct("buttermilk", 2, 20);
+        store.addProduct("jogurt", 2, 20);
         store.addProduct("coffee", 5, 1);
+        store.addProduct("milk", 3, 10);
+        store.addProduct("coffee", 5, 6);
 
-        System.out.println("prices:");
-        System.out.println("milk:  " + store.price("milk"));
-        System.out.println("coffee:  " + store.price("coffee"));
-        System.out.println("sugar: " + store.price("sugar"));
         System.out.println("stocks:");
         System.out.println("coffee:  " + store.stock("coffee"));
         System.out.println("sugar: " + store.stock("sugar"));
@@ -21,5 +19,9 @@ public class Ex12 {
         System.out.println("stocks:");
         System.out.println("coffee:  " + store.stock("coffee"));
         System.out.println("sugar: " + store.stock("sugar"));
+        System.out.println("products:");
+        for (String product : store.products()) {
+            System.out.println(product);
+        }
     }
 }
